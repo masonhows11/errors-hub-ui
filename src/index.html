@@ -1,0 +1,385 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>Hacker Errors Hub</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <script type="module" src="./js/main.js"></script>
+</head>
+<body>
+<!-- NAVBAR -->
+<nav
+        class="navbar navbar-expand-lg navbar-dark fixed-top hacker-navbar">
+    <div class="container">
+        <a class="navbar-brand hacker-logo" href="#">ERRORS::HUB</a>
+
+        <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navMenu">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link"
+                                        href="#">Errors</a></li>
+                <li class="nav-item"><a class="nav-link"
+                                        href="#">Linux</a></li>
+                <li class="nav-item"><a class="nav-link"
+                                        href="#">PHP</a></li>
+                <li class="nav-item"><a class="nav-link"
+                                        href="#">Laravel</a></li>
+                <li class="nav-item"><a class="nav-link"
+                                        href="#">Windows</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="container text-center">
+        <h1 class="glitch">FIND OUT & SOLVE THE ERRORS</h1>
+        <p class="hero-sub my-4 py-2">
+            Find • Analyze • Fix
+            <br>
+            <br>
+            Linux | PHP | Laravel | Windows | Server
+        </p>
+
+        <div class="search-box mx-auto">
+            <label for="search"></label>
+            <input type="text" id="search" class="form-control hacker-input" placeholder="Search error code...">
+        </div>
+    </div>
+</section>
+
+<section class="top-errors-wrapper">
+
+    <div class="container d-flex flex-column justify-content-center">
+        <div class="top-error-line border border-top-2">
+        </div>
+        <div class="text-top-errors w-25 text-center">
+            <h3>TOP ERRORS</h3>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+
+            <div class="col">
+                <div class="card bg-transparent border border-1 border-opacity-25  rounded rounded-2">
+                    <div class="text-center my-1">
+                        <img src="./images/alert.svg" class="card-img-top w-25 h-25" alt="...">
+                    </div>
+                    <div class="card-body">
+                        <h2 class="text-center">404</h2>
+                        <h5 class="text-center">PAGE NOT FOUND</h5>
+                        <p class="card-text text-center my-1">
+                            Page is missing or moved & data is missing
+                        </p>
+                        <div class="text-center border-top border-end border-start border-bottom-0 rounded rounded-1 p-4 my-4">
+                            <a href="#" class="text-decoration-none">
+                                VIEW DETAILS
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card bg-transparent border border-1 border-opacity-25  rounded rounded-2">
+                    <div class="text-center my-1">
+                        <img src="./images/skull.svg" class="card-img-top w-25 h-25" alt="...">
+                    </div>
+                    <div class="card-body">
+                        <h2 class="text-center">502</h2>
+                        <h5 class="text-center">BAD GATE WAY</h5>
+                        <p class="card-text text-center my-1">
+                            Invalid response from upstream server
+                        </p>
+                        <div class="text-center border-top border-end border-start border-bottom-0 rounded rounded-1 p-4 my-4">
+                            <a href="#" class="text-decoration-none">
+                                VIEW DETAILS
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col">
+                <div class="card bg-transparent border border-1 border-opacity-25  rounded rounded-2">
+                    <div class="text-center my-1">
+                        <img src="./images/lock.svg" class="card-img-top w-25 h-25" alt="...">
+                    </div>
+                    <div class="card-body">
+                        <h2 class="text-center">403</h2>
+                        <h5 class="text-center">FORBIDDEN</h5>
+                        <p class="card-text text-center my-1 h-25">
+                            Request is forbidden or restricted
+                        </p>
+                        <div class="text-center border-top border-end border-start border-bottom-0 rounded rounded-1 p-4 my-4">
+                            <a href="#" class="text-decoration-none">
+                                VIEW DETAILS
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col">
+                <div class="card bg-transparent border border-1 border-opacity-25  rounded rounded-2">
+                    <div class="text-center my-1">
+                        <img src="./images/gear.svg" class="card-img-top w-25 h-25" alt="...">
+                    </div>
+                    <div class="card-body">
+                        <h2 class="text-center">500</h2>
+                        <h5 class="text-center">INTERNAL SERVER ERROR</h5>
+                        <p class="card-text text-center my-1">
+                            Generic error message for server issues
+                        </p>
+                        <div class="text-center border-top border-end border-start border-bottom-0 rounded rounded-1 p-4 my-4">
+                            <a href="#" class="text-decoration-none">
+                                VIEW DETAILS
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<section class="most-visited-wrapper my-4">
+
+    <div class="container my-4">
+
+        <div class="row">
+
+            <div class="col-7">
+                <h2>Most visited errors codes</h2>
+                <table class="table table-striped table-error table-bordered  table-responsive w-100 my-4">
+                    <thead>
+                    <tr>
+                        <th>Error</th>
+                        <th>Code</th>
+                        <th>Description</th>
+                        <th>Views</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>404</td>
+                        <td>Page not found</td>
+                        <td>Page or current request is missing</td>
+                        <td>1,222,330</td>
+                    </tr>
+                    <tr>
+                        <td>502</td>
+                        <td>Bad Gateway</td>
+                        <td>Invalid response from upstream server</td>
+                        <td>565,111</td>
+                    </tr>
+                    <tr>
+                        <td>403</td>
+                        <td>Forbidden</td>
+                        <td>You don't have access for current request</td>
+                        <td>6,555,1122</td>
+                    </tr>
+                    <tr>
+                        <td>500</td>
+                        <td>Internal server Error</td>
+                        <td>Something happened on server side</td>
+                        <td>32,151,125</td>
+                    </tr>
+                    <tr>
+                        <td>401</td>
+                        <td>Unauthorized</td>
+                        <td>The current request with user not logged in</td>
+                        <td>25,321,123</td>
+                    </tr>
+                    <tr>
+                        <td>503</td>
+                        <td>Service Unavailable</td>
+                        <td>Request response doesn't exists or unavailable for now</td>
+                        <td>121,135,213</td>
+                    </tr>
+                    <tr>
+                        <td>400</td>
+                        <td>Bad Request</td>
+                        <td>Send bad request request</td>
+                        <td>499,561</td>
+                    </tr>
+                    <tr>
+                        <td>504</td>
+                        <td>Gateway Timeout</td>
+                        <td>Time out to get response from server</td>
+                        <td>398,359</td>
+                    </tr>
+                    <tr>
+                        <td>429</td>
+                        <td>Too Many Request</td>
+                        <td>Send too many request to server</td>
+                        <td>346,430</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <div>
+                    <a href="#" class="text-decoration-none view-all-error-link">View All Related Errors</a>
+                </div>
+
+            </div>
+
+            <div class="col-4">
+                <h2>LATEST UPDATES</h2>
+
+                <div class="card w-100 my-1 border border-1 last-updated-card mt-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <div class="d-flex justify-content-between align-items-center mt-2">
+                            <span>1 day ago</span>
+                            <a href="#" class="btn border border-2 read-more-link">Read more</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card w-100 my-1 border border-1 last-updated-card">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <div class="d-flex justify-content-between align-items-center mt-2">
+                            <span>1 day ago</span>
+                            <a href="#" class="btn border border-2 read-more-link">Read more</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card w-100 my-1 border border-1 last-updated-card">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <div class="d-flex justify-content-between align-items-center mt-2">
+                            <span>1 day ago</span>
+                            <a href="#" class="btn border border-2 read-more-link">Read more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="about-us-wrapper">
+
+    <div class="container">
+        <div class="row">
+
+            <div class="col-sm-6 about-us">
+                <h2 class="my-1">
+                    ABOUT OUR SITE
+                </h2>
+                <p class="my-2">
+                    This website is built to help developers quickly understand and fix common errors in Laravel, PHP, and Linux.
+                    Each error comes with a clear explanation, root cause, and practical solution — based on real-world experience.
+                    Less searching. More coding.
+                </p>
+            </div>
+
+            <div class="col-sm-6 forum" >
+                <h2>
+                    LATEST FORUM DISCUSSIONS
+                </h2>
+
+                <div class="d-flex" >
+
+                    <div class="d-flex flex-column ms-auto my-2" >
+
+                        <div class="card my-1 border border-1 mt-1  forum-card">
+                            <div class="card-body">
+                                <h6 class="card-title">Fix for 500 ....</h6>
+                                <p class="card-text">
+                                    With supporting text below as a natural lead-in to additional content.
+                                </p>
+                                <div class="d-flex justify-content-end mt-2">
+                                    <span>1 day ago</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card my-1 border border-1 mt-1 forum-card">
+                            <div class="card-body">
+                                <h6 class="card-title">Troubleshooting 401</h6>
+                                <p class="card-text">
+                                    With supporting text below as a natural lead-in to additional content.
+                                </p>
+                                <div class="d-flex justify-content-end mt-2">
+                                    <span>1 day ago</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</section>
+
+
+
+<section class="py-5">
+    <div class="container">
+        <div class="row g-4">
+
+            <div class="col-md-4">
+                <div class="hacker-card">
+                    <h5>500 Internal Server Error</h5>
+                    <p class="my-2">Common Laravel & Server misconfiguration
+                        error.</p>
+                    <a href="#"
+                       class="btn btn-outline-success btn-sm">View
+                        Fix</a>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="hacker-card">
+                    <h5>dpkg lock error</h5>
+                    <p class="my-2">Linux package manager locked by another
+                        process.</p>
+                    <a href="#"
+                       class="btn btn-outline-success btn-sm">View
+                        Fix</a>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="hacker-card">
+                    <h5>Vite CORS issue</h5>
+                    <p class="my-2">Local dev server blocked by browser policy.</p>
+                    <a href="#"
+                       class="btn btn-outline-success btn-sm">View
+                        Fix</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="text-center py-4 hacker-footer">
+    <small>© 2025 ERRORS::HUB — Hacker Dark Theme</small>
+</footer>
+
+</body>
+</html>

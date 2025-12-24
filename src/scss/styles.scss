@@ -1,0 +1,301 @@
+// Import all of Bootstrap’s CSS
+@import "bootstrap/scss/bootstrap";
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+html,
+body {
+  min-height: 100vh;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #0b1220 0%, #0f172a 50%, #020617 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #fff !important;
+}
+
+body,
+body p,
+body span,
+body div,
+body li,
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6,
+body a,
+body label,
+body small,
+body strong {
+  color: #fff !important;
+}
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler:focus-visible {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* GLOBAL */
+body {
+  background: radial-gradient(circle at top, #0f172a, #020617);
+  color: #e5e7eb;
+  font-family: "JetBrains Mono", monospace;
+  min-height: 100vh;
+}
+
+/* NAVBAR */
+.hacker-navbar {
+  background: rgba(2, 6, 23, 0.85);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid #0f766e;
+}
+
+.hacker-logo {
+  color: #22c55e !important;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.nav-link {
+  color: #e5e7eb !important;
+}
+
+.nav-link:hover {
+  color: #22c55e !important;
+}
+
+/* HERO */
+.hero {
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+}
+
+.hero-sub {
+  color: #94a3b8;
+}
+
+/* GLITCH EFFECT */
+.glitch {
+  font-size: 3rem;
+  color: #22c55e;
+  text-shadow: 0 0 8px #22c55e;
+}
+
+/* SEARCH */
+.search-box {
+  max-width: 420px;
+}
+
+.hacker-input {
+  background: #020617;
+  border: 1px solid #0f766e;
+  color: #22c55e;
+}
+
+.hacker-input::placeholder {
+  color: #64748b;
+}
+
+.hacker-input:focus {
+  box-shadow: none;
+  border-color: #22c55e;
+}
+
+/* CARD */
+.hacker-card {
+  background: linear-gradient(180deg, #020617, #020617cc);
+  border: 1px solid #0f766e;
+  padding: 1.5rem;
+  height: 100%;
+  transition: all 0.3s ease;
+}
+
+.hacker-card h5 {
+  color: #22c55e;
+}
+
+.hacker-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 25px #22c55e22;
+}
+
+/* FOOTER */
+.hacker-footer {
+  border-top: 1px solid #0f766e;
+  color: #64748b;
+}
+
+.text-top-errors {
+  background-color: #0B1224;
+  position: relative;
+  top: -20px;
+  left: 35%;
+}
+.top-errors-wrapper .container .card , .read-more-link{
+  transition: all 0.3s ease;
+}
+.top-errors-wrapper .container .card:hover
+{
+  transform: translateY(-5px);
+  box-shadow: 0 0 25px #22c55e22;
+}
+
+.read-more-link:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 0 25px #22c55e22;
+}
+.table-error  tbody tr td , .table-error  thead tr th {
+  background-color: #060C1D !important;
+  color: #c9d1d9;
+}
+
+.last-updated-card , .forum-card{
+  background-color: #060C1D !important;
+  color: #c9d1d9;
+}
+
+.forum-card{
+  transition: all 0.3s ease;
+}
+.forum-card:hover{
+  transform: translateX(-5px);
+  box-shadow: 0 0 25px #22c55e22;
+}
+.view-all-error-link{
+  box-shadow: 0 0 25px #22c55e22;
+}
+
+.about-us p{
+  text-justify: auto;
+  line-height: 1.5rem;
+}
+//.custom-table {
+//  background-color: #0d1117 !important;
+//  color: #c9d1d9 !important;
+//}

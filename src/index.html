@@ -1,413 +1,482 @@
 <!doctype html>
 <html lang="en">
-<head>
-    <meta charset="utf-8"/>
-    <title>Hacker Errors Hub</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <script type="module" src="./js/main.js"></script>
-</head>
-<body>
-<!-- NAVBAR -->
-<nav
-        class="navbar navbar-expand-lg navbar-dark fixed-top hacker-navbar">
-    <div class="container">
-        <a class="navbar-brand hacker-logo" href="#">ERRORS::HUB</a>
+    <head>
+        <meta charset="utf-8" />
+        <title>Hacker Errors Hub</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <script type="module" src="./js/main.js"></script>
+    </head>
+    <body>
+        <!-- NAVBAR -->
+        <nav
+            class="navbar navbar-expand-lg navbar-dark fixed-top hacker-navbar">
+            <div class="container">
+                <a class="navbar-brand hacker-logo" href="#">ERRORS::HUB</a>
 
-        <button class="navbar-toggler" type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navMenu">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+                <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navMenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-        <div class="collapse navbar-collapse" id="navMenu">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                <li class="nav-item"><a class="nav-link"
-                                        href="#">Errors</a></li>
-                <li class="nav-item"><a class="nav-link"
-                                        href="#">Linux</a></li>
-                <li class="nav-item"><a class="nav-link"
-                                        href="#">PHP</a></li>
-                <li class="nav-item"><a class="nav-link"
-                                        href="#">Laravel</a></li>
-                <li class="nav-item"><a class="nav-link"
-                                        href="#">Windows</a></li>
-            </ul>
-        </div>
-    </div>
-</nav>
-
-<!-- HERO -->
-<section class="hero">
-    <div class="container text-center">
-        <h1 class="glitch">FIND OUT & SOLVE THE ERRORS</h1>
-        <p class="hero-sub my-4 py-2">
-            Find • Analyze • Fix
-            <br>
-            <br>
-            Linux | PHP | Laravel | Windows | Server
-        </p>
-
-        <div class="search-box mx-auto">
-            <label for="search"></label>
-            <input type="text" id="search" class="form-control hacker-input" placeholder="Search error code...">
-        </div>
-    </div>
-</section>
-
-<section class="top-errors-wrapper">
-
-    <div class="container d-flex flex-column justify-content-center">
-        <div class="top-error-line border border-top-2">
-        </div>
-        <div class="text-top-errors w-25 text-center">
-            <h3>TOP ERRORS</h3>
-        </div>
-    </div>
-
-    <div class="container">
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
-
-            <div class="col">
-                <div class="card bg-transparent border border-1 border-opacity-25  rounded rounded-2">
-                    <div class="text-center my-1">
-                        <img src="./images/alert.svg" class="card-img-top w-25 h-25" alt="...">
-                    </div>
-                    <div class="card-body">
-                        <h2 class="text-center">404</h2>
-                        <h5 class="text-center">PAGE NOT FOUND</h5>
-                        <p class="card-text text-center my-1">
-                            Page is missing or moved & data is missing
-                        </p>
-                        <div class="text-center border-top border-end border-start border-bottom-0 rounded rounded-1 p-4 my-4">
-                            <a href="#" class="text-decoration-none">
-                                VIEW DETAILS
-                            </a>
-                        </div>
-                    </div>
+                <div class="collapse navbar-collapse" id="navMenu">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link"
+                                href="#">Errors</a></li>
+                        <li class="nav-item"><a class="nav-link"
+                                href="#">Linux</a></li>
+                        <li class="nav-item"><a class="nav-link"
+                                href="#">PHP</a></li>
+                        <li class="nav-item"><a class="nav-link"
+                                href="#">Laravel</a></li>
+                        <li class="nav-item"><a class="nav-link"
+                                href="#">Windows</a></li>
+                    </ul>
                 </div>
             </div>
+        </nav>
 
-            <div class="col">
-                <div class="card bg-transparent border border-1 border-opacity-25  rounded rounded-2">
-                    <div class="text-center my-1">
-                        <img src="./images/skull.svg" class="card-img-top w-25 h-25" alt="...">
-                    </div>
-                    <div class="card-body">
-                        <h2 class="text-center">502</h2>
-                        <h5 class="text-center">BAD GATE WAY</h5>
-                        <p class="card-text text-center my-1">
-                            Invalid response from upstream server
-                        </p>
-                        <div class="text-center border-top border-end border-start border-bottom-0 rounded rounded-1 p-4 my-4">
-                            <a href="#" class="text-decoration-none">
-                                VIEW DETAILS
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <div class="col">
-                <div class="card bg-transparent border border-1 border-opacity-25  rounded rounded-2">
-                    <div class="text-center my-1">
-                        <img src="./images/lock.svg" class="card-img-top w-25 h-25" alt="...">
-                    </div>
-                    <div class="card-body">
-                        <h2 class="text-center">403</h2>
-                        <h5 class="text-center">FORBIDDEN</h5>
-                        <p class="card-text text-center my-1 h-25">
-                            Request is forbidden or restricted
-                        </p>
-                        <div class="text-center border-top border-end border-start border-bottom-0 rounded rounded-1 p-4 my-4">
-                            <a href="#" class="text-decoration-none">
-                                VIEW DETAILS
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <div class="col">
-                <div class="card bg-transparent border border-1 border-opacity-25  rounded rounded-2">
-                    <div class="text-center my-1">
-                        <img src="./images/gear.svg" class="card-img-top w-25 h-25" alt="...">
-                    </div>
-                    <div class="card-body">
-                        <h2 class="text-center">500</h2>
-                        <h5 class="text-center">INTERNAL SERVER ERROR</h5>
-                        <p class="card-text text-center my-1">
-                            Generic error message for server issues
-                        </p>
-                        <div class="text-center border-top border-end border-start border-bottom-0 rounded rounded-1 p-4 my-4">
-                            <a href="#" class="text-decoration-none">
-                                VIEW DETAILS
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-
-</section>
-
-<section class="most-visited-wrapper my-4">
-
-    <div class="container my-4">
-
-        <div class="row">
-
-            <div class="col-7">
-                <h2>Most visited errors codes</h2>
-                <table class="table table-striped table-error table-bordered  table-responsive w-100 my-4">
-                    <thead>
-                    <tr>
-                        <th>Error</th>
-                        <th>Code</th>
-                        <th>Description</th>
-                        <th>Views</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td>404</td>
-                        <td>Page not found</td>
-                        <td>Page or current request is missing</td>
-                        <td>1,222,330</td>
-                    </tr>
-                    <tr>
-                        <td>502</td>
-                        <td>Bad Gateway</td>
-                        <td>Invalid response from upstream server</td>
-                        <td>565,111</td>
-                    </tr>
-                    <tr>
-                        <td>403</td>
-                        <td>Forbidden</td>
-                        <td>You don't have access for current request</td>
-                        <td>6,555,1122</td>
-                    </tr>
-                    <tr>
-                        <td>500</td>
-                        <td>Internal server Error</td>
-                        <td>Something happened on server side</td>
-                        <td>32,151,125</td>
-                    </tr>
-                    <tr>
-                        <td>401</td>
-                        <td>Unauthorized</td>
-                        <td>The current request with user not logged in</td>
-                        <td>25,321,123</td>
-                    </tr>
-                    <tr>
-                        <td>503</td>
-                        <td>Service Unavailable</td>
-                        <td>Request response doesn't exists or unavailable for now</td>
-                        <td>121,135,213</td>
-                    </tr>
-                    <tr>
-                        <td>400</td>
-                        <td>Bad Request</td>
-                        <td>Send bad request request</td>
-                        <td>499,561</td>
-                    </tr>
-                    <tr>
-                        <td>504</td>
-                        <td>Gateway Timeout</td>
-                        <td>Time out to get response from server</td>
-                        <td>398,359</td>
-                    </tr>
-                    <tr>
-                        <td>429</td>
-                        <td>Too Many Request</td>
-                        <td>Send too many request to server</td>
-                        <td>346,430</td>
-                    </tr>
-                    </tbody>
-                </table>
-                <div>
-                    <a href="#" class="text-decoration-none view-all-error-link">View All Related Errors</a>
-                </div>
-
-            </div>
-
-            <div class="col-4">
-                <h2>LATEST UPDATES</h2>
-
-                <div class="card w-100 my-1 border border-1 last-updated-card mt-4">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                        <div class="d-flex justify-content-between align-items-center mt-2">
-                            <span>1 day ago</span>
-                            <a href="#" class="btn border border-2 read-more-link">Read more</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card w-100 my-1 border border-1 last-updated-card">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                        <div class="d-flex justify-content-between align-items-center mt-2">
-                            <span>1 day ago</span>
-                            <a href="#" class="btn border border-2 read-more-link">Read more</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card w-100 my-1 border border-1 last-updated-card">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                        <div class="d-flex justify-content-between align-items-center mt-2">
-                            <span>1 day ago</span>
-                            <a href="#" class="btn border border-2 read-more-link">Read more</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<section class="about-us-wrapper">
-
-    <div class="container">
-        <div class="row">
-
-            <div class="col-sm-6 about-us">
-                <h2 class="my-1">
-                    ABOUT OUR SITE
-                </h2>
-                <p class="my-2">
-                    This website is built to help developers quickly understand and fix common errors in Laravel, PHP,
-                    and Linux.
-                    Each error comes with a clear explanation, root cause, and practical solution — based on real-world
-                    experience.
-                    Less searching. More coding.
+        <!-- HERO -->
+        <section class="hero">
+            <div class="container text-center">
+                <h1 class="glitch">FIND OUT & SOLVE THE ERRORS</h1>
+                <p class="hero-sub my-4 py-2">
+                    Find • Analyze • Fix
+                    <br>
+                    <br>
+                    Linux | PHP | Laravel | Windows | Server
                 </p>
+
+                <div class="search-box mx-auto">
+                    <label for="search"></label>
+                    <input type="text" id="search"
+                        class="form-control hacker-input"
+                        placeholder="Search error code...">
+                </div>
+            </div>
+        </section>
+
+        <section class="top-errors-wrapper">
+
+            <div class="container d-flex flex-column justify-content-center">
+                <div class="top-error-line border border-top-2">
+                </div>
+                <div class="text-top-errors w-25 text-center">
+                    <h3>TOP ERRORS</h3>
+                </div>
             </div>
 
-            <div class="col-sm-6 forum">
-                <h2>
-                    LATEST FORUM DISCUSSIONS
-                </h2>
+            <div class="container">
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
 
-                <div class="d-flex">
-
-                    <div class="d-flex flex-column ms-auto my-2">
-
-                        <div class="card my-1 border border-1 mt-1  forum-card">
+                    <div class="col">
+                        <div
+                            class="card bg-transparent border border-1 border-opacity-25  rounded rounded-2">
+                            <div class="text-center my-1">
+                                <img src="./images/alert.svg"
+                                    class="card-img-top w-25 h-25" alt="...">
+                            </div>
                             <div class="card-body">
-                                <h6 class="card-title">Fix for 500 ....</h6>
-                                <p class="card-text">
-                                    With supporting text below as a natural lead-in to additional content.
+                                <h2 class="text-center">404</h2>
+                                <h5 class="text-center">PAGE NOT FOUND</h5>
+                                <p class="card-text text-center my-1">
+                                    Page is missing or moved & data is missing
                                 </p>
-                                <div class="d-flex justify-content-end mt-2">
-                                    <span>1 day ago</span>
+                                <div
+                                    class="text-center border-top border-end border-start border-bottom-0 rounded rounded-1 p-4 my-4">
+                                    <a href="#" class="text-decoration-none">
+                                        VIEW DETAILS
+                                    </a>
                                 </div>
                             </div>
                         </div>
+                    </div>
 
-                        <div class="card my-1 border border-1 mt-1 forum-card">
+                    <div class="col">
+                        <div
+                            class="card bg-transparent border border-1 border-opacity-25  rounded rounded-2">
+                            <div class="text-center my-1">
+                                <img src="./images/skull.svg"
+                                    class="card-img-top w-25 h-25" alt="...">
+                            </div>
                             <div class="card-body">
-                                <h6 class="card-title">Troubleshooting 401</h6>
-                                <p class="card-text">
-                                    With supporting text below as a natural lead-in to additional content.
+                                <h2 class="text-center">502</h2>
+                                <h5 class="text-center">BAD GATE WAY</h5>
+                                <p class="card-text text-center my-1">
+                                    Invalid response from upstream server
                                 </p>
-                                <div class="d-flex justify-content-end mt-2">
-                                    <span>1 day ago</span>
+                                <div
+                                    class="text-center border-top border-end border-start border-bottom-0 rounded rounded-1 p-4 my-4">
+                                    <a href="#" class="text-decoration-none">
+                                        VIEW DETAILS
+                                    </a>
                                 </div>
                             </div>
                         </div>
 
                     </div>
+                    <div class="col">
+                        <div
+                            class="card bg-transparent border border-1 border-opacity-25  rounded rounded-2">
+                            <div class="text-center my-1">
+                                <img src="./images/lock.svg"
+                                    class="card-img-top w-25 h-25" alt="...">
+                            </div>
+                            <div class="card-body">
+                                <h2 class="text-center">403</h2>
+                                <h5 class="text-center">FORBIDDEN</h5>
+                                <p class="card-text text-center my-1 h-25">
+                                    Request is forbidden or restricted
+                                </p>
+                                <div
+                                    class="text-center border-top border-end border-start border-bottom-0 rounded rounded-1 p-4 my-4">
+                                    <a href="#" class="text-decoration-none">
+                                        VIEW DETAILS
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col">
+                        <div
+                            class="card bg-transparent border border-1 border-opacity-25  rounded rounded-2">
+                            <div class="text-center my-1">
+                                <img src="./images/gear.svg"
+                                    class="card-img-top w-25 h-25" alt="...">
+                            </div>
+                            <div class="card-body">
+                                <h2 class="text-center">500</h2>
+                                <h5 class="text-center">INTERNAL SERVER
+                                    ERROR</h5>
+                                <p class="card-text text-center my-1">
+                                    Generic error message for server issues
+                                </p>
+                                <div
+                                    class="text-center border-top border-end border-start border-bottom-0 rounded rounded-1 p-4 my-4">
+                                    <a href="#" class="text-decoration-none">
+                                        VIEW DETAILS
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="most-visited-wrapper my-4">
+
+            <div class="container my-4">
+
+                <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+
+                    <div class="col-sm-6">
+                        <h2>Most visited errors codes</h2>
+                        <table
+                            class="table table-striped table-error table-bordered  table-responsive my-4">
+                            <thead>
+                                <tr>
+                                    <th>Error</th>
+                                    <th>Code</th>
+                                    <th>Description</th>
+                                    <th>Views</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>404</td>
+                                    <td>Page not found</td>
+                                    <td>Page or current request is missing</td>
+                                    <td>1,222,330</td>
+                                </tr>
+                                <tr>
+                                    <td>502</td>
+                                    <td>Bad Gateway</td>
+                                    <td>Invalid response from upstream
+                                        server</td>
+                                    <td>565,111</td>
+                                </tr>
+                                <tr>
+                                    <td>403</td>
+                                    <td>Forbidden</td>
+                                    <td>You don't have access for current
+                                        request</td>
+                                    <td>6,555,1122</td>
+                                </tr>
+                                <tr>
+                                    <td>500</td>
+                                    <td>Internal server Error</td>
+                                    <td>Something happened on server side</td>
+                                    <td>32,151,125</td>
+                                </tr>
+                                <tr>
+                                    <td>401</td>
+                                    <td>Unauthorized</td>
+                                    <td>The current request with user not logged
+                                        in</td>
+                                    <td>25,321,123</td>
+                                </tr>
+                                <tr>
+                                    <td>503</td>
+                                    <td>Service Unavailable</td>
+                                    <td>Request response doesn't exists or
+                                        unavailable for now</td>
+                                    <td>121,135,213</td>
+                                </tr>
+                                <tr>
+                                    <td>400</td>
+                                    <td>Bad Request</td>
+                                    <td>Send bad request request</td>
+                                    <td>499,561</td>
+                                </tr>
+                                <tr>
+                                    <td>504</td>
+                                    <td>Gateway Timeout</td>
+                                    <td>Time out to get response from
+                                        server</td>
+                                    <td>398,359</td>
+                                </tr>
+                                <tr>
+                                    <td>429</td>
+                                    <td>Too Many Request</td>
+                                    <td>Send too many request to server</td>
+                                    <td>346,430</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div>
+                            <a href="#"
+                                class="text-decoration-none view-all-error-link">View
+                                All Related Errors</a>
+                        </div>
+
+                    </div>
+
+                    <div class="col-sm-6">
+                        <h2>LATEST UPDATES</h2>
+
+                        <div
+                            class="card w-100 my-1 border border-1 last-updated-card mt-4">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">With supporting text below
+                                    as a natural lead-in to additional
+                                    content.</p>
+                                <div
+                                    class="d-flex justify-content-between align-items-center mt-2">
+                                    <span>1 day ago</span>
+                                    <a href="#"
+                                        class="btn border border-2 read-more-link">Read
+                                        more</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div
+                            class="card w-100 my-1 border border-1 last-updated-card">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">With supporting text below
+                                    as a natural lead-in to additional
+                                    content.</p>
+                                <div
+                                    class="d-flex justify-content-between align-items-center mt-2">
+                                    <span>1 day ago</span>
+                                    <a href="#"
+                                        class="btn border border-2 read-more-link">Read
+                                        more</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div
+                            class="card w-100 my-1 border border-1 last-updated-card">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">With supporting text below
+                                    as a natural lead-in to additional
+                                    content.</p>
+                                <div
+                                    class="d-flex justify-content-between align-items-center mt-2">
+                                    <span>1 day ago</span>
+                                    <a href="#"
+                                        class="btn border border-2 read-more-link">Read
+                                        more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="about-us-wrapper">
+
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-sm-6 about-us">
+                        <h2 class="my-1">
+                            ABOUT OUR SITE
+                        </h2>
+                        <p class="my-2">
+                            This website is built to help developers quickly
+                            understand and fix common errors in Laravel, PHP,
+                            and Linux.
+                            Each error comes with a clear explanation, root
+                            cause, and practical solution — based on real-world
+                            experience.
+                            Less searching. More coding.
+                        </p>
+                    </div>
+
+                    <div class="col-sm-6 forum">
+                        <h2>
+                            LATEST FORUM DISCUSSIONS
+                        </h2>
+
+                        <div class="d-flex">
+
+                            <div class="d-flex flex-column ms-auto my-2">
+
+                                <div
+                                    class="card my-1 border border-1 mt-1  forum-card">
+                                    <div class="card-body">
+                                        <h6 class="card-title">Fix for 500
+                                            ....</h6>
+                                        <p class="card-text">
+                                            With supporting text below as a
+                                            natural lead-in to additional
+                                            content.
+                                        </p>
+                                        <div
+                                            class="d-flex justify-content-end mt-2">
+                                            <span>1 day ago</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div
+                                    class="card my-1 border border-1 mt-1 forum-card">
+                                    <div class="card-body">
+                                        <h6 class="card-title">Troubleshooting
+                                            401</h6>
+                                        <p class="card-text">
+                                            With supporting text below as a
+                                            natural lead-in to additional
+                                            content.
+                                        </p>
+                                        <div
+                                            class="d-flex justify-content-end mt-2">
+                                            <span>1 day ago</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
 
                 </div>
             </div>
 
-        </div>
-    </div>
+        </section>
 
-</section>
+        <section class="py-5">
+            <div class="container">
+                <div class="row g-4">
 
+                    <div class="col-md-4">
+                        <div class="hacker-card">
+                            <h5>500 Internal Server Error</h5>
+                            <p class="my-2">Common Laravel & Server
+                                misconfiguration
+                                error.</p>
+                            <a href="#"
+                                class="btn btn-outline-success btn-sm">View
+                                Fix</a>
+                        </div>
+                    </div>
 
-<section class="py-5">
-    <div class="container">
-        <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="hacker-card">
+                            <h5>dpkg lock error</h5>
+                            <p class="my-2">Linux package manager locked by
+                                another
+                                process.</p>
+                            <a href="#"
+                                class="btn btn-outline-success btn-sm">View
+                                Fix</a>
+                        </div>
+                    </div>
 
-            <div class="col-md-4">
-                <div class="hacker-card">
-                    <h5>500 Internal Server Error</h5>
-                    <p class="my-2">Common Laravel & Server misconfiguration
-                        error.</p>
-                    <a href="#"
-                       class="btn btn-outline-success btn-sm">View
-                        Fix</a>
+                    <div class="col-md-4">
+                        <div class="hacker-card">
+                            <h5>Vite CORS issue</h5>
+                            <p class="my-2">Local dev server blocked by browser
+                                policy.</p>
+                            <a href="#"
+                                class="btn btn-outline-success btn-sm">View
+                                Fix</a>
+                        </div>
+                    </div>
+
                 </div>
             </div>
+        </section>
 
-            <div class="col-md-4">
-                <div class="hacker-card">
-                    <h5>dpkg lock error</h5>
-                    <p class="my-2">Linux package manager locked by another
-                        process.</p>
-                    <a href="#"
-                       class="btn btn-outline-success btn-sm">View
-                        Fix</a>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="hacker-card">
-                    <h5>Vite CORS issue</h5>
-                    <p class="my-2">Local dev server blocked by browser policy.</p>
-                    <a href="#"
-                       class="btn btn-outline-success btn-sm">View
-                        Fix</a>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
-
-<!-- FOOTER -->
-<!--<small>© 2025 ERRORS::HUB — Hacker Dark Theme</small>-->
-<footer class="text-center py-4 hacker-footer">
-    <div>
-        <small>© 2025 ERRORS::HUB — All rights reserved | Na33m Soltnay | Contact : mason.hows11@gmail.com </small>
-    </div>
-    <div class="d-flex align-content-center justify-content-center my-5">
-
-        <div class="d-flex flex-row gap-4">
-            <div><a href="">
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
-                    <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
-                </svg></a>
-            </div>
-            <div><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
-                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
-            </svg></a></div>
-            <div><a href="">
-                <svg xmlns="http://www.w3.org/2000/svg"  width="32" height="32" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
-                    <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
-                </svg>
-            </a></div>
+        <!-- FOOTER -->
+        <!--<small>© 2025 ERRORS::HUB — Hacker Dark Theme</small>-->
+        <footer class="text-center py-4 hacker-footer">
             <div>
-                <a href=""><svg xmlns="http://www.w3.org/2000/svg"  width="32" height="32" fill="currentColor" class="bi bi-telegram" viewBox="0 0 16 16">
-                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.287 5.906q-1.168.486-4.666 2.01-.567.225-.595.442c-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294q.39.01.868-.32 3.269-2.206 3.374-2.23c.05-.012.12-.026.166.016s.042.12.037.141c-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8 8 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629q.14.092.27.187c.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.4 1.4 0 0 0-.013-.315.34.34 0 0 0-.114-.217.53.53 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09"/>
-                </svg></a>
+                <small>© 2025 ERRORS::HUB — All rights reserved | Na33m Soltnay
+                    | Contact : mason.hows11@gmail.com </small>
             </div>
-        </div>
+            <div
+                class="d-flex align-content-center justify-content-center my-5">
 
-    </div>
-</footer>
+                <div class="d-flex flex-row gap-4">
+                    <div><a href>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32"
+                                height="32" fill="currentColor"
+                                class="bi bi-envelope" viewBox="0 0 16 16">
+                                <path
+                                    d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />
+                            </svg></a>
+                    </div>
+                    <div><a href><svg xmlns="http://www.w3.org/2000/svg"
+                                width="32" height="32" fill="currentColor"
+                                class="bi bi-github" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+                            </svg></a></div>
+                    <div><a href>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32"
+                                height="32" fill="currentColor"
+                                class="bi bi-whatsapp" viewBox="0 0 16 16">
+                                <path
+                                    d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
+                            </svg>
+                        </a></div>
+                    <div>
+                        <a href><svg xmlns="http://www.w3.org/2000/svg"
+                                width="32" height="32" fill="currentColor"
+                                class="bi bi-telegram" viewBox="0 0 16 16">
+                                <path
+                                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.287 5.906q-1.168.486-4.666 2.01-.567.225-.595.442c-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294q.39.01.868-.32 3.269-2.206 3.374-2.23c.05-.012.12-.026.166.016s.042.12.037.141c-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8 8 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629q.14.092.27.187c.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.4 1.4 0 0 0-.013-.315.34.34 0 0 0-.114-.217.53.53 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09" />
+                            </svg></a>
+                    </div>
+                </div>
 
-</body>
+            </div>
+        </footer>
+
+    </body>
 </html>

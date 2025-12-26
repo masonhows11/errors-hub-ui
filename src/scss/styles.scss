@@ -1,5 +1,6 @@
 // Import all of Bootstrap’s CSS
 @import "bootstrap/scss/bootstrap";
+@import "bootstrap-icons";
 html,
 body,
 div,
@@ -279,7 +280,10 @@ body {
   background-color: #060C1D !important;
   color: #c9d1d9;
 }
-
+.contact-icons{
+  background-color: #060C1D !important;
+  color: #c9d1d9;
+}
 .forum-card{
   transition: all 0.3s ease;
 }
